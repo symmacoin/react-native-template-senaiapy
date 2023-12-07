@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import React from 'react';
 
 import { useIsFirstTime } from '@/core/hooks';
@@ -6,6 +7,7 @@ import { Button, FocusAwareStatusBar, SafeAreaView, Text, View } from '@/ui';
 import { Cover } from './cover';
 export const Onboarding = () => {
   const [_, setIsFirstTime] = useIsFirstTime();
+  const test = 0;
   return (
     <View className="flex h-full items-center  justify-center">
       <FocusAwareStatusBar />
