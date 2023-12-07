@@ -15,7 +15,7 @@ export const Onboarding = () => {
         <Cover />
       </View>
       <View className="justify-end ">
-        <Text className="my-3 text-center text-5xl font-bold">
+        <Text className="my-3 text-center text-3xl font-bold">
           SenaiaPY Starter
         </Text>
         <Text className="mb-2 text-center text-lg text-gray-600">
