@@ -54,6 +54,18 @@
         </dict>
       </dict>
     </dict>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Senaia need to Access Bluetooth Printer</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Senaia need to Bluetooth Printer Config</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Senaia need to Take a Photo</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Senaia need to Access your Gallery get Photo</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Senaia need to Access your Gallery get Photo</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Senaia need to Access your Cam take Photo</string>
     <key>UIAppFonts</key>
     <array>
       <string>Inter.ttf</string>

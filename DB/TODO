@@ -1,0 +1,463 @@
+TODO:
+
+1- crie um pincode com seu email
+Identificacao
+-IA chat
+-BLOCKCHAIN
+-PUSH NOTIFICATIONS
+-MESSEMGER
+-FIRST SCREEN MESSEGEN NOTIFICATIONS
+-microservices
+-GENERAL OFFLINE FIRST
+
+------------------------------------------
+
+general_dispositivo #### DISPOSITIVO = R.P T.N TARJETA
+general_color #### COLOR = AMARILLO BLANCO NARANJA
+general_modalidad ###MODALIDAD = CAMPO HOTELARIA parceria
+general_CATEGORIA ####CATEGORIA = TORO NOVILLO T.H T.M D.H D.M VACA VAQUILLA
+general_tipo_salida ###TIPO SALIDA = FAENA MONTANDAD TRANSFERENCIA
+general_destino ### DESTINO = FRIGORIFICO
+general_corral ### 1 CORALL 
+general_controlador ## CONTROLADOR = ADICIONAR OTROS
+
+------------------------------------------Performing Streamed Install
+adb: failed to install app-release.apk: Failure [INSTALL_PARSE_FAILED_MANIFEST_MALFORMED: Failed parse during installPackageLI: /data/app/vmdl349057476.tmp/base.apk (at Binary XML file line #39): intent tag may have at most one data scheme.]
+┌
+
+1- permissions to user and dashboard
+2- send tokens to server permissions
+3- relations user and property and productor and animal
+4- write databanks identifica offline and sync to server
+5- userID saved in update dbs
+5- DBS:
+Animal
+Alimento
+Entrada
+General
+Guia
+Identifica
+Liquidacion
+Message
+Peso
+Raza
+Salida
+Vacuna
+6- dashboard permissions and store user
+7- dashboard verify server error
+8- general data offline first
+9- all dbs IDENTIFICA dump and sync offline
+10- POSICION GEOGRAFICA DA ESTANCIA/RASTREO GEOGRAFICO
+11- TRANSLATE DASHBOARD TRANSLATE APP ENTRADA/SALIDA
+12- GRAFICO aumento PESO ANIMAL
+13- translate mobile identifica
+14- translate all dashboard
+15- Flatlist prod prop frigo not recursive
+16- Align RFID READER in list and verify
+17- enviar idTecnico e idCompany
+18- -MARCAFOGO CON FOTO
+19- -GUIA ENTRADA SALIDA GENERAL IDENTIFICA OFFLINE FIRST
+20- componente add MATRIX
+21- calc dias confinamento calc costo total
+22- PESO BLUETOOTH 
+23- sync Entrada/Salida/Corral/Numerator/Guia
+
+Performing Streamed Install
+adb: failed to install app-release.apk: Failure [INSTALL_PARSE_FAILED_MANIFEST_MALFORMED: Failed parse during installPackageLI: /data/app/vmdl349057476.tmp/base.apk (at Binary XML file line #39): intent tag may have at most one data scheme.]
+
+####################################################################
+nuevo
+   TODOS
+2- NUMERO DE GUIA CANTIDAD CANTIDAD GRABADA ISSINC  CORRAL-POR-PESO CORRAL-ID CORRAL-NAME CORRAL-MAX CORRAL-MIN CORRAL-ISACTIVE
+   cantidadMaxima ANIMALES
+5- cadastro de numeros usados NUMERO
+tarjeta =0
+tn =1
+rp=2
+amarillo=3
+naranja=4
+blanco=5
+
+  DASHBOARD
+  4- RELOAD quando seta datos
+  5- cambiar layout LAZOS in funcao login
+6- IMPORTAR Y EXPORTAR datos IN dbs
+7- COLOCAR spinners
+8- DATA spinners
+9- LOCAL STORAGE
+10-USER TYPE
+11- radio button set curral
+
+
+APP GUIA
+3- CORRAL ACTIVO POR PESO... NOME=A01 -> A47 (-A45) minPeso maxPeso activo(esta lista fica en corral)
+4- n.Guia+n.Contrato+corralOrigem = n.Ordem (alfanumerico)
+5- colocar spinners Guia
+
+APP SALIDA
+1- SELECIONA DATOS DA GUIA EN FUNCION DA N.ORDEM Y CANTIDAD DE ANIMALES QUE FALTAN
+2- INCREMENTA NUMERO AUTOMATICO A CADA INSERCION
+3- PREENCHE N. ANTERIOR PESO 
+4- color-caravana  amarillo-naranja-BLANCO
+5- tipo dispositivo actual tarjeta tn rp
+
+APP ENTRADA ===>>> REGISTRO DA GUIA... + N.ANTERIRO PESO SIGLA...SE SIGRA YA UTILIZADA..SELECIONA SIN(APAGA DATOS ANTERIORES)
+
+1- SELECIONA DATOS ENTRADA EN FUNCION NUMERO orden y incrementaSE INCREMENTA POR
+ cadastro de numeros usados NUMERO
+tarjeta =0
+tn =1
+rp=2
+amarillo=3
+naranja=4
+blanco=5
+
+2-  SIGLA ANTERIOR SPIN E +
+3- corral busca quando lleno se inibe
+4- color-caravana  amarillo-naranja-BLANCO
+5- tipo dispositivo actual tarjeta tn rp
+6- CORRAL ORIGEM VEM REGISTRO GUIA
+7-MODALIDAD----
+8- LOTE ----
+9- NUM GUIA ----
+10- CATEGORIA ----
+11- FECHA APLICA ---> SALIDA
+
+
+APP SALIDA ===> NUM ACTUAL CARAVANA (TRAS DATOS ENTRADA)+PESO SALIDA + NUM GUIA + SALIDA POR CURRAL
+
+1-FECHA APLICA VAE SALIDA
+2- FORMULAS DE CONSUMOS....
+##############################################################
+==init app
+in home screen test sync if not sincked DB and Sunc true
+
+==guia
+Criar guía
+Salvar Guia local
+Salvar db
+Criar curral
+Salvar curral local
+Salvar db
+Confirmar envio
+Envia curral
+Confirmar envio
+Enviar guia
+
+==entrada
+Alterar entrada
+Adicionar + a controlName
+Adicior a spinName
+zerar one first
+
+Ao entrar entrada
+carrega guia
+Carrega curral
+Carrega curral local
+Corral ad
+Salva corral local
+Salva db corral
+Envia db corral
+
+Carrega siglas
+Carrega sigla local
+Siga ad
+Salva siga local
+Salva sigla db
+Envía sigra
+E número tag
+
+Confirma se pode enviar
+Salva entrada local
+Salva db
+salva valor numerator
+salva qtdy_entrada guia
+confirma sync
+
+==salida
+alterar salida
+propietario identifica = n.caravana propietario origen
+
+Adicionar + a controlName
+Adicior a spinName
+zerar one first
+formulas calculo comida
+
+Ao entrar entrada
+carrega guia e verifica salida_fin = false
+carrega entrada
+
+Confirma se pode enviar
+Salva entrada local
+Salva db
+salva qtdy_salida guia
+verifica qtdy_salida = cantidad => salida_fin = true
+
+confirma sync
+
+################################
+
+SIGLA
+INSTALAR APP
+
+######
+por caravana
+
+salida_ms_cab_dia
+salida_costo_compra
+salida_costo_diaria
+salida_costo_curativo
+salida_costo_protocolo
+salida_peso_proyectado
+salida_corral
+
+CORRAL
+CONSUMO MS/CAB/DIA
+PESO PROYECTADO
+VALOR COMPRA 
+COSTO DIARIA
+COSTO CURATIVO
+COSTO PROTOCOLO 
+
+####
+CONSUMO MS/CAB/DIA === consumo de materia sca pro cabeca dia
+PESO PROYECTADO === cadastro 
+
+CMS % PV = consumo percentoal peso vivo
+MS/CAB/DIA / (peso entrada + peso salida)/2
+
+CMS TOTAL = 
+MS/CAB/DIA * dia de confinamiento
+
+GMD = gano media DIARIA
+(peso de salida - peso entrada) / dias de confimento
+
+#################################
+#################################
+#################################
+#################################
+
+INICIA ENTRADA
+
+1-Registro guiA e crea orden
+CREA BANCO N_ORDEN E INIT
+2-Cria corral peso e orden
+
+----------------
+ENTRADA 
+
+1-Carrega guia
+ Carrega corral
+ -->>por numero orden
+ Carrega numerator
+
+2-Con sigla cria caravana e inc sigla
+  Se nao houver sigra cria 
+
+3-Coloca animal corral 
+4-verifica qtdy_entrada = cantidad => entrada_fin = true
+
+5- VALIDA DATOS A ENVIAR
+6- Envia datos 
+
+Actualisa datos guia cantidad entrada
+Actualiza datos de curral cantidad
+Actualisa SIGLA contadores
+Actualisa Entrada
+salva dbs
+salva storage
+Sync
+
+7- MANTEN DATOS PROXIMO ENVIO e INC caravana
+---------------
+INICIA SALIDA
+
+1-Cria datos en caravana
+  PESO PROYECTADO E COSTOS CURRAL MSCAB
+
+----------------
+SALIDA 
+
+1-Carrega guia
+  Corral
+  Sigla
+  -->por n.orden
+  Entrada 
+  -->por caravana
+
+2-Calcula datos 
+3-verifica qtdy_salida = cantidad => salida_fin = true
+
+4- VALIDA DATOS A ENVIAR
+5- envia datos
+
+Actualisa datos guia cantidad salida
+Actualiza datos de curral cantidad
+Actualisa SIGLA contadores
+Actualisa Entrada
+salva dbs
+salva storage
+Sync
+
+5- MANTEN DATOS PROXIMO ENVIO
+
+SE FIN fECHA BANCO N_ORDEN 
+
+--------------
+
+#################################
+#################################
+#################################
+#################################
+
+#######################     TODOS
+---configurar dash board
+
+- GUIA - CORRAL -- ENTRADA--SALIDA
+- ENTRADA- SALIDA
+
+- CREA OBJETO N ORDEM DB
+- crea db propietario de origem y sigla db
+
+- CALC DIRECTO CUANDO SE CAMBIA DATOS
+- AUMENTAR TOUCHABLE OPACITY
+- ENTRADA E SALIDA SALVA DATOS ANTERIORES NO STORAGE(SOLO SALVA EN API SE DATOS VALIDOS)
+- LISTS SUSPENSA DE N. ORDEN
+- sacar chrvron das datas
+- KEYBOARD ABAIXO DO LABEL EDITADO
+
+- INCREMENTO CON PICKER INC E PREGUNTA DE ENVIO INSTANTANEO O Sync
+
+- SYNC ALL DATA NOT SYNCED IN INIT
+#---------------------------
+
+##############         DATOS CORRAL SALIDA
+
+-COLOCAR DATOS
+ CORRAL
+ COSTO DIARIA
+ CMS
+ PESO PROYECTADO
+ VALOR DE COMPRA
+
+#---------------------------
+
+####################       ENTRADA
+- Coloca cantidad de ANIMALES POR CURRAL 40 e al llegar en 1 ANTES MAXIOMO marca rojo
+
+- ao inc caravana entrada ao enviar--- inc numrador 
+- NUMEROS ANTERIORES COM MESMA COLOR
+- A CADA ENVIO LIMPA CAMPO NUMERO ANTERIOR E NUMERO ACTUAL E PESO ENTRADA
+- FOCO INICIAL EN NUMERO ANTERIOR DEPOIS SE VAE A PESO ENTRADA
+- colocar zero automatico quando cria numero actual 6 digitos
+- varificar se animal ya salio coloca alerta en rojo todavia permite insertar datos
+
+- lista de num de orden busca
+- CALC  AUTOMATICO DE NUMERO ACTUAL
+- VERIFICACAO AUTOMATICA DE CALCULO DE CORRAL + INC E lista
+- MODALIDAD CON CALCULO AUTO E INC
+- AO ENVIAR SE INCREMENTA AUTOMATICO NUMERO ACTUAL
+#---------------------------
+
+#######################     SALIDA
+- Coloca cantidad de embarque 40 e al llegar en 39 marca rojo
+- focus caravana peso salida INSERE DATOS
+- sacar numero orden
+- COSTO CORATIVO Y COSTO PROTOCOLO SE FIXAN
+- busca solo por caravana
+- colocar zero automatico quando coloca caravana busca 6 digitos
+- varificar se animal ya salio coloca alerta en rojo todavia permite insertar datos
+- fecha salida value de hoy... todavia adjusta
+- seta cantidad automatica inicio en 1
+- lote/contrato iguais
+- marca dias de confinamento se menor que 90 marca rojo y no passa
+- COLOCAR % CMS PV
+
+- cal cautomatico dias confinamento ao colocar fecha
+- calc automatico CMS PV
+- CALC CMS TOTAL
+- CALC GMD
+- CALC NOBRE IDENTIFICACION
+- CALC COSTO TOTAL
+- CALC COSTO TOTAL VALOR DIARIA * DIAS DE CONFINAMENTO
+#---------------------------
+
+########################## GUIA
+
+- contrato / salida mismo valor y sacar lote
+- calc automatico num orden
+- lista prop origem y incrementa
+
+#---------------------------
+########################## CORRAL
+
+- TRUE = ABIERTO
+#---------------------------
+DASHBOARD
+
+- NUMEROS ANTERIORES COM MESMA COLOR
+- -A- CADA ENVIO LIMPA CAMPO NUMERO ANTERIOR E NUMERO ACTUAL E PESO ENTRADA
+- FOCO INICIAL EN NUMERO ANTERIOR DEPOIS SE VAE A PESO ENTRADA-
+#---------------------------
+
+numerator Sigla actual when return to another counter return to 0
+verify corral control quantity
+crud update corral for array
+creat n_orden DB to search n_ordens actives
+
+===== BUSCA ERRADA NA SALIDA =================
+
+IMPORT DB EXCELL
+
+AGREGA +
+- CONTROLADOR
+- DESTINO
+- TIPO
+- COLOR
+- SIGLA
+
+corral invalid value option boolean expected string
+
+dashboard buttonAdd
+dashboard nordem list
+dashboard modalidad list
+dashboard proporigen list
+dashboard corral list
+dashboard sigla list
+
+DB
+corral name unique
+n orden unique
+entrada num actual unique
+salida num caravana unique
+
+Dashboard === CounterCantidad inc... Cantidad - 1 = counterCantida === rojo... i > cantidad not inc anymore.
+
+################################## FINAL DASHBOARD #############################################
+
+-entrada curral nao aparece na busca so na segunda busca
+-costo corativo e custo protocolo sobe para mais usados
+-adjuste calculos cmspv gmd cms total
+-calculo dias confinamento
+-calculos tipo de dispositivo actual
+-colocar pad 6 digitos dispositivo actual
+-in contador entrada a cada envio ACTUALIAZ N.ACTUAL
+-sacar cantidad total 
+-colocar PROMEDIO/LOTE por lote acima
+-colocar PROMEDIO/TOTAL por dia acima
+-colocar angus default 0
+-acesso por login para somente TECNICO usar APP... noedita
+-colocar peso por corral automatico
+
+-cria APP ... so para tecnicos... somente ENTRADA e SALIDA com botao de SHOW fields
+  ENTRADA =>>> sacar  CANTIDAD CONTRATO N.GUIA FECHA-ENTRADA MODALIDAD
+  SALIDA =>>> sacar  CATEGORIA MODALIDAD N.GUIA PESO-ENTRADA FECHA-ENTRADA PROP.ORIGEN CANTIDAD(SEMPRE 1)
+################################## FINAL APP #############################################
+-BUSCA COSTOS EN CORRAL(NOT EN ANIMAL)
+
+################################## FINAL SERVIDOR #############################################
+-GUIA NUMERO DE ORDEM UNIQUE
+-ENTRADA NUMEO ACTUAL 
+-SALIDA CARAVANA UNIQUE
+-CORRAL NAME UNIQUE
+-

@@ -35,7 +35,7 @@ const BUNDLE_ID = 'com.senaiapy'; // ios bundle id
 const PACKAGE = 'com.senaiapy'; // android package name
 const NAME = 'SenaiaPYApp'; // app name
 const EXPO_ACCOUNT_OWNER = 'senaiapy'; // expo account owner
-const EAS_PROJECT_ID = 'c3e1075b-6fe7-4686-aa49-35b46a229044'; // eas project id
+const EAS_PROJECT_ID = '6ebeec91-7da4-4d89-aaa8-3e689c13dad0'; // eas project id
 
 /**
  * We declare a function withEnvSuffix that will add a suffix to the variable name based on the APP_ENV
@@ -74,7 +74,41 @@ const client = z.object({
   VERSION: z.string(),
 
   // ADD YOUR CLIENT ENV VARS HERE
+  //API_URL: z.string(),
+  API_URL_FEED: z.string(),
+
+  // --------------------------------
+  SECRET_KEY: z.string(),
+  API_URL_G: z.string(),
+  baseURL: z.string(),
   API_URL: z.string(),
+  SYNC_API_URL: z.string(),
+  API_API: z.string(),
+  API_HTTP: z.string(),
+  API_WDB: z.string(),
+  API_SENAIA: z.string(),
+  AESKEY: z.string(),
+  DB_VERSION: z.string(),
+  APPINIT: z.string(),
+  CODE: z.string(),
+  KERNEL: z.string(),
+  DEBUG: z.string(),
+  POSITION: z.string(),
+  APPCOMPANY: z.string(),
+  WHATSPHONE: z.string(),
+  MYWHATSPHONE: z.string(),
+  WHATSPHONE2: z.string(),
+  MAIL: z.string(),
+  SITE: z.string(),
+  SITE_SENAIA: z.string(),
+  SITECOMPANY: z.string(),
+  COIBFEINDEX: z.string(),
+  AUTOUPDATE: z.string(),
+  ROOT_PASSWORD: z.string(),
+  ROOT_VPA_NOMBRE: z.string(),
+  ROOT_VPA_ID: z.string(),
+  TIMEOUT_REQUEST: z.string(),
+  KEY: z.string(),
 });
 
 const buildTime = z.object({
@@ -82,6 +116,38 @@ const buildTime = z.object({
   EAS_PROJECT_ID: z.string(),
   // ADD YOUR BUILD TIME ENV VARS HERE
   SECRET_KEY: z.string(),
+  // --------------------------------
+  API_URL_G: z.string(),
+  baseURL: z.string(),
+  API_URL: z.string(),
+  SYNC_API_URL: z.string(),
+  API_API: z.string(),
+  API_HTTP: z.string(),
+  API_WDB: z.string(),
+  API_SENAIA: z.string(),
+  API_URL_FEED: z.string(),
+  AESKEY: z.string(),
+  DB_VERSION: z.string(),
+  APPINIT: z.string(),
+  CODE: z.string(),
+  KERNEL: z.string(),
+  DEBUG: z.string(),
+  POSITION: z.string(),
+  APPCOMPANY: z.string(),
+  WHATSPHONE: z.string(),
+  MYWHATSPHONE: z.string(),
+  WHATSPHONE2: z.string(),
+  MAIL: z.string(),
+  SITE: z.string(),
+  SITE_SENAIA: z.string(),
+  SITECOMPANY: z.string(),
+  COIBFEINDEX: z.string(),
+  AUTOUPDATE: z.string(),
+  ROOT_PASSWORD: z.string(),
+  ROOT_VPA_NOMBRE: z.string(),
+  ROOT_VPA_ID: z.string(),
+  TIMEOUT_REQUEST: z.string(),
+  KEY: z.string(),
 });
 
 /**
@@ -95,7 +161,40 @@ const _clientEnv = {
   VERSION: packageJSON.version,
 
   // ADD YOUR ENV VARS HERE TOO
+  //API_URL: process.env.API_URL,
+  API_URL_FEED: process.env.API_URL_FEED,
+  // --------------------------------
+  SECRET_KEY: process.env.SECRET_KEY,
+  API_URL_G: process.env.API_URL_G,
+  baseURL: process.env.baseURL,
   API_URL: process.env.API_URL,
+  SYNC_API_URL: process.env.SYNC_API_URL,
+  API_API: process.env.API_API,
+  API_HTTP: process.env.API_HTTP,
+  API_WDB: process.env.API_WDB,
+  API_SENAIA: process.env.API_SENAIA,
+  AESKEY: process.env.AESKEY,
+  DB_VERSION: process.env.DB_VERSION,
+  APPINIT: process.env.APPINIT,
+  CODE: process.env.CODE,
+  KERNEL: process.env.KERNEL,
+  DEBUG: process.env.DEBUG,
+  POSITION: process.env.POSITION,
+  APPCOMPANY: process.env.APPCOMPANY,
+  WHATSPHONE: process.env.WHATSPHONE,
+  MYWHATSPHONE: process.env.MYWHATSPHONE,
+  WHATSPHONE2: process.env.WHATSPHONE2,
+  MAIL: process.env.MAIL,
+  SITE: process.env.SITE,
+  SITE_SENAIA: process.env.SITE_SENAIA,
+  SITECOMPANY: process.env.SITECOMPANY,
+  COIBFEINDEX: process.env.COIBFEINDEX,
+  AUTOUPDATE: process.env.AUTOUPDATE,
+  ROOT_PASSWORD: process.env.ROOT_PASSWORD,
+  ROOT_VPA_NOMBRE: process.env.ROOT_VPA_NOMBRE,
+  ROOT_VPA_ID: process.env.ROOT_VPA_ID,
+  TIMEOUT_REQUEST: process.env.TIMEOUT_REQUEST,
+  KEY: process.env.KEY,
 };
 
 /**
@@ -106,6 +205,38 @@ const _buildTimeEnv = {
   EAS_PROJECT_ID,
   // ADD YOUR ENV VARS HERE TOO
   SECRET_KEY: process.env.SECRET_KEY,
+  // --------------------------------
+  API_URL_G: process.env.API_URL_G,
+  baseURL: process.env.baseURL,
+  API_URL: process.env.API_URL,
+  SYNC_API_URL: process.env.SYNC_API_URL,
+  API_API: process.env.API_API,
+  API_HTTP: process.env.API_HTTP,
+  API_WDB: process.env.API_WDB,
+  API_SENAIA: process.env.API_SENAIA,
+  API_URL_FEED: process.env.API_URL_FEED,
+  AESKEY: process.env.AESKEY,
+  DB_VERSION: process.env.DB_VERSION,
+  APPINIT: process.env.APPINIT,
+  CODE: process.env.CODE,
+  KERNEL: process.env.KERNEL,
+  DEBUG: process.env.DEBUG,
+  POSITION: process.env.POSITION,
+  APPCOMPANY: process.env.APPCOMPANY,
+  WHATSPHONE: process.env.WHATSPHONE,
+  MYWHATSPHONE: process.env.MYWHATSPHONE,
+  WHATSPHONE2: process.env.WHATSPHONE2,
+  MAIL: process.env.MAIL,
+  SITE: process.env.SITE,
+  SITE_SENAIA: process.env.SITE_SENAIA,
+  SITECOMPANY: process.env.SITECOMPANY,
+  COIBFEINDEX: process.env.COIBFEINDEX,
+  AUTOUPDATE: process.env.AUTOUPDATE,
+  ROOT_PASSWORD: process.env.ROOT_PASSWORD,
+  ROOT_VPA_NOMBRE: process.env.ROOT_VPA_NOMBRE,
+  ROOT_VPA_ID: process.env.ROOT_VPA_ID,
+  TIMEOUT_REQUEST: process.env.TIMEOUT_REQUEST,
+  KEY: process.env.KEY,
 };
 
 /**

@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import React from 'react';
 
 import { useIsFirstTime } from '@/core/hooks';
@@ -6,6 +7,7 @@ import { Button, FocusAwareStatusBar, SafeAreaView, Text, View } from '@/ui';
 import { Cover } from './cover';
 export const Onboarding = () => {
   const [_, setIsFirstTime] = useIsFirstTime();
+  const test = 0;
   return (
     <View className="flex h-full items-center  justify-center">
       <FocusAwareStatusBar />
@@ -13,7 +15,7 @@ export const Onboarding = () => {
         <Cover />
       </View>
       <View className="justify-end ">
-        <Text className="my-3 text-center text-5xl font-bold">
+        <Text className="my-3 text-center text-3xl font-bold">
           SenaiaPY Starter
         </Text>
         <Text className="mb-2 text-center text-lg text-gray-600">
