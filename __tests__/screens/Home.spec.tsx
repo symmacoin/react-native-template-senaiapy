@@ -2,7 +2,7 @@ import React from 'react';
 import { fireEvent, render } from '@testing-library/react-native';
 import { NavigationContext, NavigationProp } from "@react-navigation/native";
 
-import { Home } from '../../screens/Home';
+import { Home } from '@/screens/Home';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import RNSecureStorage, {ACCESSIBLE} from 'rn-secure-storage';
 

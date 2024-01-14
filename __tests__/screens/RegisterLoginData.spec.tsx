@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render, waitFor } from '@testing-library/react-native';
 
-import { RegisterLoginData } from '../../screens/RegisterLoginData';
+import { RegisterLoginData } from '@/screens/RegisterLoginData';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import RNSecureStorage, {ACCESSIBLE} from 'rn-secure-storage';
 
@@ -19,7 +19,7 @@ jest.mock('@react-navigation/native', () => ({
     navigate: mockedNavigate
   }),
 }));
-/*
+
 describe('RegisterLoginData', () => {
   it('should be able to save login data on async storage', async () => {
     // const spySetItem = jest.spyOn(AsyncStorage, 'setItem')
@@ -99,4 +99,3 @@ describe('RegisterLoginData', () => {
     getByText('Senha é obrigatória!')
   });
 })
-*/
