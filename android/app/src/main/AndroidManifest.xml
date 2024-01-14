@@ -1,23 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-  <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
-  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
-  <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
-  <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
-  <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
-  <uses-permission android:name="android.permission.CAMERA"/>
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-  <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
-  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-  <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
   <uses-permission android:name="android.permission.VIBRATE"/>
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-  <uses-feature android:name="android.hardware.bluetooth" android:required="true"/>
   <queries>
     <intent>
       <action android:name="android.intent.action.VIEW"/>
@@ -25,16 +11,11 @@
       <data android:scheme="https"/>
     </intent>
   </queries>
-  <application android:name=".MainApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
-   
-    <meta-data android:name="expo.modules.updates.ENABLED" android:value="true"/>
-    <meta-data android:name="expo.modules.updates.EXPO_RUNTIME_VERSION" android:value="@string/expo_runtime_version"/>
+  <application android:name=".MainApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="true" android:theme="@style/AppTheme">
+    <meta-data android:name="expo.modules.updates.ENABLED" android:value="false"/>
+    <meta-data android:name="expo.modules.updates.EXPO_SDK_VERSION" android:value="49.0.0"/>
     <meta-data android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH" android:value="ALWAYS"/>
-    <meta-data android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS" android:value="30000"/>
-    <meta-data android:name="expo.modules.updates.EXPO_UPDATE_URL" android:value="https://exp.host/@pyfoundation/senaiapy"/>
-
-    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCN7TPsrQqUUZMZk0UVpjJLd17qvwIhdWQ"/>
-
+    <meta-data android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS" android:value="0"/>
     <activity android:name=".MainActivity" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode|locale|layoutDirection" android:launchMode="singleTask" android:windowSoftInputMode="adjustResize" android:theme="@style/Theme.App.SplashScreen" android:exported="true" android:screenOrientation="portrait">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
@@ -44,8 +25,8 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="com.senaiapy.development"/>
-        <data android:scheme="exp+senaiapyapp"/>
+        <data android:scheme="com.notitas.development"/>
+        <data android:scheme="exp+notitas"/>
       </intent-filter>
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false"/>

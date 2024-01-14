@@ -1,6 +1,13 @@
 import 'react-native-gesture-handler';
 
+import {
+  Rubik_300Light,
+  Rubik_400Regular,
+  Rubik_500Medium,
+  useFonts,
+} from '@expo-google-fonts/rubik';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+import AppLoading from 'expo-app-loading';
 import * as SplashScreen from 'expo-splash-screen';
 import React from 'react';
 import { StyleSheet } from 'react-native';
@@ -16,6 +23,16 @@ loadSelectedTheme();
 SplashScreen.preventAutoHideAsync();
 
 const App = () => {
+  const [fontsLoaded] = useFonts({
+    Rubik_300Light,
+    Rubik_400Regular,
+    Rubik_500Medium,
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
   return (
     <GestureHandlerRootView style={styles.container}>
       <BottomSheetModalProvider>

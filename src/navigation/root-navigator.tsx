@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 
 import { useAuth } from '@/core';
 import { useIsFirstTime } from '@/core/hooks';
-import { Onboarding } from '@/screens';
+import { Home, Onboarding, RegisterLoginData } from '@/screens';
 
 import { AuthNavigator } from './auth-navigator';
 import { NavigationContainer } from './navigation-container';
@@ -42,6 +42,9 @@ export const Root = () => {
           )}
         </Stack.Group>
       )}
+
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="RegisterLoginData" component={RegisterLoginData} />
     </Stack.Navigator>
   );
 };

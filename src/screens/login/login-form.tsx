@@ -33,14 +33,14 @@ export const LoginForm = ({ onSubmit = () => {} }: LoginFormProps) => {
   return (
     <View className="flex-1 justify-center p-4">
       <Text testID="form-title" variant="h1" className="pb-6 text-center">
-        Sign In
+        Acesso
       </Text>
 
       <ControlledInput
         testID="name"
         control={control}
         name="name"
-        label="Name"
+        label="Nome"
       />
 
       <ControlledInput
@@ -53,13 +53,13 @@ export const LoginForm = ({ onSubmit = () => {} }: LoginFormProps) => {
         testID="password-input"
         control={control}
         name="password"
-        label="Password"
+        label="Senha"
         placeholder="***"
         secureTextEntry={true}
       />
       <Button
         testID="login-button"
-        label="Login"
+        label="Inicio"
         onPress={handleSubmit(onSubmit)}
         variant="primary"
       />

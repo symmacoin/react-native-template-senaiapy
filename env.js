@@ -31,11 +31,11 @@ require('dotenv').config({
  * for example: if the APP_ENV is staging, the bundle id will be com.senaiapy.staging
  */
 
-const BUNDLE_ID = 'com.senaiapy'; // ios bundle id
-const PACKAGE = 'com.senaiapy'; // android package name
-const NAME = 'SenaiaPYApp'; // app name
+const BUNDLE_ID = 'com.notitas'; // ios bundle id
+const PACKAGE = 'com.notitas'; // android package name
+const NAME = 'Notitas'; // app name
 const EXPO_ACCOUNT_OWNER = 'senaiapy'; // expo account owner
-const EAS_PROJECT_ID = '6ebeec91-7da4-4d89-aaa8-3e689c13dad0'; // eas project id
+const EAS_PROJECT_ID = '6ebeec91-7da4-4d89-aaa8-3e689c13dad1'; // eas project id
 
 /**
  * We declare a function withEnvSuffix that will add a suffix to the variable name based on the APP_ENV

@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-imports */
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import type { RouteProp } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -6,7 +7,7 @@ import type { ComponentType } from 'react';
 import * as React from 'react';
 import type { SvgProps } from 'react-native-svg';
 
-import { Settings, Style } from '@/screens';
+import { Home, Settings, Style } from '@/screens';
 import {
   colors,
   Feed as FeedIcon,
@@ -20,6 +21,7 @@ type TabParamList = {
   Style: undefined;
   FeedNavigator: undefined;
   Settings: undefined;
+  Home: undefined;
 };
 
 type TabType = {
@@ -36,6 +38,7 @@ const Tab = createBottomTabNavigator<TabParamList>();
 
 const tabsIcons: TabIconsType = {
   Style: (props: SvgProps) => <StyleIcon {...props} />,
+  Home: (props: SvgProps) => <StyleIcon {...props} />,
   FeedNavigator: (props: SvgProps) => <FeedIcon {...props} />,
   Settings: (props: SvgProps) => <SettingsIcon {...props} />,
 };
@@ -47,9 +50,11 @@ export type TabList<T extends keyof TabParamList> = {
 
 const tabs: TabType[] = [
   {
+    //name: 'Home',
+    //component: Home,
     name: 'Style',
-    component: Style,
-    label: 'Style',
+    component: Home,
+    label: 'Home',
   },
   {
     name: 'FeedNavigator',
