@@ -59,7 +59,7 @@ const tabs: TabType[] = [
   {
     name: 'FeedNavigator',
     component: FeedNavigator,
-    label: 'Feed',
+    label: 'BackUp',
   },
   {
     name: 'Settings',
